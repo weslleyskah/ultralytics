@@ -20,8 +20,17 @@ Follow these simple steps to get the example running on your local machine.
     ```bash
     pip install -r requirements.txt
     ```
+    
+3.  **Export the YOLOv8 Model to ONNX:**
+    You must convert the PyTorch model to ONNX format before OpenCV can read it.
+    ```bash
+    yolo export model=yolov8n.pt imgsz=640 format=onnx opset=12
+    ```
 
-3.  **Run the Detection Script:**
+4.  **Download or use a local sample image:**
+    Download a sample image or use a local one. Save it as ``image.jpg`` inside the ``ultralytics\examples\YOLOv8-OpenCV-ONNX-Python`` directory to test the detection script.
+
+5.  **Run the Detection Script:**
     Execute the main Python script, specifying the ONNX model path and the input image.
     ```bash
     python main.py --model yolov8n.onnx --img image.jpg
