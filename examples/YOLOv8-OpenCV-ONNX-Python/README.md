@@ -28,7 +28,7 @@ Follow these simple steps to get the example running on your local machine.
     ```
 
 4.  **Download or use a local sample image:**
-    Download a sample image or use a local one. Save it as ``image.jpg`` inside the ``ultralytics\examples\YOLOv8-OpenCV-ONNX-Python`` directory to test the detection script.
+    Download a sample image or use a local one, then save it as `image.jpg` in this example directory to test the detection script.
 
 5.  **Run the Detection Script:**
     Execute the main Python script, specifying the ONNX model path and the input image.
